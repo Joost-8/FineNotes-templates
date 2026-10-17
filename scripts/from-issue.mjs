@@ -96,6 +96,15 @@ async function main() {
   const issue = JSON.parse(readFileSync(eventPath, "utf8")).issue;
   out.issue = issue.number;
   const form = readForm(issue.body);
+  if (!("Name" in form) || !("Files" in form)) {
+    out.errors.push(
+      "This issue did not come through the Submit a template form, so it has no file or details. " +
+        "That can happen when GitHub's app opens the link: it shows a plain issue instead of the form. " +
+        "Open the form in a web browser instead: " +
+        "https://github.com/Joost-8/FineNotes-templates/issues/new?template=submit-template.yml",
+    );
+    return;
+  }
   const name = (form["Name"] ?? "").replace(/\s+/g, " ").trim().slice(0, 80);
   const author = (form["Your name, as it should show"] ?? "").replace(/\s+/g, " ").trim().slice(0, 60);
   const category = CATEGORIES[(form["Category"] ?? "").toLowerCase()];

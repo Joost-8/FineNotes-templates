@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: A question, a problem, or a takedown request
+    url: https://github.com/Joost-8/FineNotes/issues
+    about: Anything that is not a template submission goes to FineNotes' own issues.

@@ -16,7 +16,9 @@ concurrency:
 
 jobs:
   submit:
-    if: contains(github.event.issue.labels.*.name, 'submission')
+    # The form adds the label; a "Template: …" issue without it came another
+    # way (often GitHub's app, which skips the form) and gets told what to do.
+    if: contains(github.event.issue.labels.*.name, 'submission') || startsWith(github.event.issue.title, 'Template:')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
