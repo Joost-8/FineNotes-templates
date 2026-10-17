@@ -25,13 +25,24 @@ const HOSTS = [
 // Tests only: a local server standing in for GitHub's storage.
 if (process.env.SUBMISSION_TEST_HOST) HOSTS.push(process.env.SUBMISSION_TEST_HOST);
 
-const CATEGORIES = { planner: "planner", study: "study", journal: "journal", work: "work", paper: "paper", other: "other" };
-const LICENCES = {
-  "Personal use only": "personal",
-  "Personal and commercial use": "commercial",
-  "CC BY 4.0 (share and adapt, with credit)": "cc-by",
-  "CC0 (no rights reserved)": "cc0",
-};
+const CATEGORIES = ["planner", "study", "journal", "work", "paper", "other"];
+
+/** A category as typed: "Planner", "planners", "Study " all read; else undefined. */
+export function readCategory(text) {
+  const word = String(text).trim().toLowerCase().replace(/s$/, "");
+  return CATEGORIES.find((c) => c === word || (c === "study" && word === "studie"));
+}
+
+/** A licence as typed: its id, its label, or the words that tell them apart. */
+export function readLicence(text) {
+  const t = String(text).trim().toLowerCase();
+  if (!t) return undefined;
+  if (/cc0|cc-0|public domain|no rights/.test(t)) return "cc0";
+  if (/cc[ -]?by/.test(t)) return "cc-by";
+  if (/commercial/.test(t)) return "commercial";
+  if (/personal/.test(t)) return "personal";
+  return undefined;
+}
 
 const out = { ok: false, errors: [] };
 const finish = () => {
@@ -107,8 +118,8 @@ async function main() {
   }
   const name = (form["Name"] ?? "").replace(/\s+/g, " ").trim().slice(0, 80);
   const author = (form["Your name, as it should show"] ?? "").replace(/\s+/g, " ").trim().slice(0, 60);
-  const category = CATEGORIES[(form["Category"] ?? "").toLowerCase()];
-  const licence = LICENCES[form["Licence"] ?? ""];
+  const category = readCategory(form["Category"] ?? "");
+  const licence = readLicence(form["Licence"] ?? "");
   const description = (form["Description"] ?? "").replace(/\s+/g, " ").trim().slice(0, 400);
   const tags = (form["Tags"] ?? "")
     .split(",")
@@ -117,8 +128,12 @@ async function main() {
     .slice(0, 8);
   if (!name) out.errors.push("The form has no name for the template.");
   if (!author) out.errors.push("The form has no author name.");
-  if (!category) out.errors.push("Choose a category.");
-  if (!licence) out.errors.push("Choose a licence.");
+  if (!category) out.errors.push("Category must be one of: Planner, Study, Journal, Work, Paper, Other.");
+  if (!licence) {
+    out.errors.push(
+      "Licence must be one of: Personal use only, Personal and commercial use, CC BY 4.0, CC0.",
+    );
+  }
   const urls = attachments(form["Files"] ?? "");
   if (urls.length === 0) {
     out.errors.push("No file was attached: drag your PDF, PNG or JPEG into Files.");

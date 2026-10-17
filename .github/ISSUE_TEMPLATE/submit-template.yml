@@ -22,22 +22,22 @@ body:
       label: Your name, as it should show
     validations:
       required: true
-  - type: dropdown
+  # Text fields, not dropdowns: GitHub fills text fields in from the link
+  # FineNotes opens, and leaves dropdowns empty.
+  - type: input
     id: category
     attributes:
       label: Category
-      options: [Planner, Study, Journal, Work, Paper, Other]
+      description: "One of: Planner, Study, Journal, Work, Paper, Other."
+      placeholder: Planner
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: licence
     attributes:
       label: Licence
-      options:
-        - Personal use only
-        - Personal and commercial use
-        - CC BY 4.0 (share and adapt, with credit)
-        - CC0 (no rights reserved)
+      description: "One of: Personal use only · Personal and commercial use · CC BY 4.0 (share and adapt, with credit) · CC0 (no rights reserved)."
+      placeholder: CC BY 4.0 (share and adapt, with credit)
     validations:
       required: true
   - type: textarea
