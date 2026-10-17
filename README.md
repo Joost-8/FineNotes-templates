@@ -53,13 +53,15 @@ or an index, keep working in FineNotes.
 
 ## Adding yours
 
-1. Fork this repository and add your folder under `templates/`.
-2. Run `node scripts/build-index.mjs --check` to see that it passes.
-3. Open a pull request. The same check runs on it, then it is reviewed by a
-   person.
+**The easy way:** in FineNotes, open My templates and tap **Share…**, or
+open the [Submit a template](../../issues/new?template=submit-template.yml)
+form here. Fill in a name and licence and drag your PDF, PNG or JPEG into
+it. A bot checks it, makes a preview, and opens the submission for you
+within a minute or two, then replies on your issue. Once it is reviewed and
+merged, it is in every FineNotes gallery.
 
-You can also open an issue with the **Submit a template** form and attach
-your files.
+**With git:** fork this repository, add your folder under `templates/`, check
+it with `node scripts/build-index.mjs --check`, and open a pull request.
 
 Only submit designs that are yours to share. To have a template taken down,
 open an issue.

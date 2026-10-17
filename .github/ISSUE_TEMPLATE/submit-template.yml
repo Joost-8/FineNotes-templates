@@ -1,12 +1,14 @@
 name: Submit a template
-description: Share a paper template with everyone who uses FineNotes.
+description: Share a paper template with everyone who uses FineNotes. No git needed.
 title: "Template: "
 labels: [submission]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for sharing! Attach your template as a **PDF, PNG or JPEG** (at most 40 MB) and a preview picture of its first page. Only submit designs that are yours to share.
+        Thanks for sharing! Fill this in and drag your template into **Files**: a **PDF, PNG or JPEG**, at most 40 MB. A preview is made for you.
+
+        A bot turns this into a submission within a minute or two and replies here. Once it is reviewed, your template appears in every FineNotes user's gallery. Only submit designs that are yours to share.
   - type: input
     id: name
     attributes:
@@ -43,11 +45,17 @@ body:
     attributes:
       label: Description
       placeholder: Monday start, with an index page that links to each day.
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: A few words, separated by commas.
+      placeholder: weekly, hyperlinked
   - type: textarea
     id: files
     attributes:
       label: Files
-      description: Drag your template file and its preview here.
+      description: Drag your template here. Add a picture of its first page too only if you want your own preview.
     validations:
       required: true
   - type: checkboxes

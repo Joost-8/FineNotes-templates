@@ -1,0 +1,31 @@
+name: Submission
+
+# A "Submit a template" issue becomes a checked pull request.
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: submission-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  submit:
+    if: contains(github.event.issue.labels.*.name, 'submission')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      # pdftoppm and pdfinfo, for the preview and the page count.
+      - run: sudo apt-get install -y --no-install-recommends poppler-utils
+      - run: node scripts/from-issue.mjs
+      - run: node scripts/submission-pr.mjs
+        env:
+          GH_TOKEN: ${{ github.token }}
