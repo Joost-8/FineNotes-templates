@@ -1,0 +1,13 @@
+{
+  "id": "cornell-notes",
+  "name": "Cornell notes",
+  "author": "FineNotes",
+  "description": "A cue column, room for notes, and a summary box at the foot: the Cornell method.",
+  "version": "1",
+  "licence": "cc0",
+  "category": "study",
+  "tags": ["cornell", "lecture", "notes"],
+  "file": "cornell-notes.pdf",
+  "preview": "preview.png",
+  "pages": 1
+}

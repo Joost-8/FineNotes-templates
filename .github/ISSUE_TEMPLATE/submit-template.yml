@@ -1,0 +1,59 @@
+name: Submit a template
+description: Share a paper template with everyone who uses FineNotes.
+title: "Template: "
+labels: [submission]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing! Attach your template as a **PDF, PNG or JPEG** (at most 40 MB) and a preview picture of its first page. Only submit designs that are yours to share.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: Weekly planner
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Your name, as it should show
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options: [Planner, Study, Journal, Work, Paper, Other]
+    validations:
+      required: true
+  - type: dropdown
+    id: licence
+    attributes:
+      label: Licence
+      options:
+        - Personal use only
+        - Personal and commercial use
+        - CC BY 4.0 (share and adapt, with credit)
+        - CC0 (no rights reserved)
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: Monday start, with an index page that links to each day.
+  - type: textarea
+    id: files
+    attributes:
+      label: Files
+      description: Drag your template file and its preview here.
+    validations:
+      required: true
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights
+      options:
+        - label: I made this template, or have the right to share it under the licence above.
+          required: true

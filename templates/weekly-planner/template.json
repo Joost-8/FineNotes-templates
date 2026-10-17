@@ -1,0 +1,13 @@
+{
+  "id": "weekly-planner",
+  "name": "Weekly planner",
+  "author": "FineNotes",
+  "description": "An index page that links to each day, and a tab on every day back to it. Priorities and lined notes.",
+  "version": "1",
+  "licence": "cc0",
+  "category": "planner",
+  "tags": ["weekly", "hyperlinked", "planner"],
+  "file": "weekly-planner.pdf",
+  "preview": "preview.png",
+  "pages": 8
+}

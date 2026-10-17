@@ -1,0 +1,39 @@
+{
+  "format": 1,
+  "templates": [
+    {
+      "id": "cornell-notes",
+      "name": "Cornell notes",
+      "author": "FineNotes",
+      "description": "A cue column, room for notes, and a summary box at the foot: the Cornell method.",
+      "version": "1",
+      "licence": "cc0",
+      "category": "study",
+      "tags": [
+        "cornell",
+        "lecture",
+        "notes"
+      ],
+      "pages": 1,
+      "preview": "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/cornell-notes/preview.png",
+      "download": "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/cornell-notes/cornell-notes.pdf"
+    },
+    {
+      "id": "weekly-planner",
+      "name": "Weekly planner",
+      "author": "FineNotes",
+      "description": "An index page that links to each day, and a tab on every day back to it. Priorities and lined notes.",
+      "version": "1",
+      "licence": "cc0",
+      "category": "planner",
+      "tags": [
+        "weekly",
+        "hyperlinked",
+        "planner"
+      ],
+      "pages": 8,
+      "preview": "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/weekly-planner/preview.png",
+      "download": "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/weekly-planner/weekly-planner.pdf"
+    }
+  ]
+}
