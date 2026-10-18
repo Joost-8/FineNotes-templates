@@ -4,7 +4,8 @@
 //   node scripts/build-index.mjs --check   check only (pull requests)
 //
 // No dependencies: Node 18 or later.
-import { readFileSync, readdirSync, statSync, writeFileSync } from "node:fs";
+import { execFileSync } from "node:child_process";
+import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -24,6 +25,25 @@ function kindOf(file) {
   if (b[0] === 0x89 && b[1] === 0x50 && b[2] === 0x4e && b[3] === 0x47) return "png";
   if (b[0] === 0xff && b[1] === 0xd8 && b[2] === 0xff) return "jpeg";
   return null;
+}
+
+// Download counts and the counted download addresses (scripts/sync-downloads.mjs).
+const counted = existsSync(path.join(root, "downloads.json"))
+  ? JSON.parse(readFileSync(path.join(root, "downloads.json"), "utf8"))
+  : {};
+
+/** When a template first came in: its template.json's first commit (needs full history). */
+function addedOf(id) {
+  try {
+    const dates = execFileSync(
+      "git",
+      ["log", "--diff-filter=A", "--format=%cI", "--", `templates/${id}/template.json`],
+      { cwd: root, encoding: "utf8" },
+    ).trim();
+    return dates.split(String.fromCharCode(10)).pop() || undefined;
+  } catch {
+    return undefined;
+  }
 }
 
 const errors = [];
@@ -107,7 +127,10 @@ for (const id of readdirSync(dir).sort()) {
     pages: Number.isInteger(t.pages) && t.pages > 0 ? t.pages : 1,
     preview,
     ...(previews.length > 0 ? { previews } : {}),
-    ...(download ? { download } : {}),
+    // The counted copy when there is one, else the file itself.
+    ...(download ? { download: counted[id]?.download || download } : {}),
+    downloads: Number(counted[id]?.downloads ?? 0),
+    ...(addedOf(id) ? { added: addedOf(id) } : {}),
     ...(t.shop ? { shop: t.shop } : {}),
     ...(t.retired === true ? { retired: true } : {}),
   });

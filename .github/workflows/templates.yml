@@ -4,15 +4,25 @@ on:
   pull_request:
   push:
     branches: [main]
+  # Download counts, a few times a day.
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: templates-${{ github.event_name == 'pull_request' && github.ref || 'main' }}
 
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The whole history: each template's "added" date is its first commit.
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -20,18 +30,22 @@ jobs:
       # types by their contents, sizes). Nothing is built.
       - if: github.event_name == 'pull_request'
         run: node scripts/build-index.mjs --check
-      # On main: a picture of every page of each template, then index.json;
-      # both committed when they changed.
-      - if: github.event_name == 'push'
+      # On main, on a schedule or by hand: a picture of every page, the
+      # counted download copies and their counts, then index.json; committed
+      # when anything changed.
+      - if: github.event_name != 'pull_request'
         run: sudo apt-get install -y --no-install-recommends poppler-utils
-      - if: github.event_name == 'push'
+      - if: github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           node scripts/make-previews.mjs
+          node scripts/sync-downloads.mjs
           node scripts/build-index.mjs
-          git add index.json templates
+          git add index.json downloads.json templates
           if ! git diff --cached --quiet; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git commit -m "Rebuild page previews and index.json"
+            git commit -m "Rebuild page previews, download counts and index.json"
             git push
           fi
