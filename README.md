@@ -66,6 +66,14 @@ it with `node scripts/build-index.mjs --check`, and open a pull request.
 Only submit designs that are yours to share. To have a template taken down,
 open an issue.
 
+## Downloads
+
+FineNotes downloads each template from a copy attached to the
+[gallery-files](../../releases/tag/gallery-files) release, so GitHub counts
+the downloads. Counts are added up per template (all its versions) every 6
+hours and after every merge, and shown in the gallery, which can sort by
+them. Nothing about who downloaded is recorded, by FineNotes or here.
+
 ## For maintainers
 
 `index.json` is built from every `template.json` with
