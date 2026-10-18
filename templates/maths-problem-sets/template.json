@@ -1,0 +1,20 @@
+{
+  "id": "maths-problem-sets",
+  "name": "Maths problem sets",
+  "author": "FineNotes",
+  "description": "Four numbered problems on dot grid with answer boxes, a graphing page with axes and a table of values, a two-column proof, and a formula sheet of eight cards.",
+  "version": "1",
+  "licence": "cc0",
+  "category": "study",
+  "tags": [
+    "maths",
+    "problem set",
+    "graph",
+    "proof",
+    "formulas",
+    "hyperlinked"
+  ],
+  "file": "maths-problem-sets.pdf",
+  "preview": "preview.png",
+  "pages": 4
+}

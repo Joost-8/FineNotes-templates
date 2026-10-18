@@ -1,0 +1,20 @@
+{
+  "id": "language-learning-journal",
+  "name": "Language learning journal",
+  "author": "FineNotes",
+  "description": "An airmail-themed journal for any language: a vocabulary table with gender dots, grammar notes with examples and exceptions, four conjugation tables, and writing practice with a corrections column.",
+  "version": "1",
+  "licence": "cc0",
+  "category": "study",
+  "tags": [
+    "language",
+    "vocabulary",
+    "grammar",
+    "conjugation",
+    "travel",
+    "hyperlinked"
+  ],
+  "file": "language-learning-journal.pdf",
+  "preview": "preview.png",
+  "pages": 4
+}

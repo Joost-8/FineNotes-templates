@@ -1,0 +1,18 @@
+{
+  "id": "botanical-papers",
+  "name": "Botanical papers",
+  "author": "FineNotes",
+  "description": "Four everyday papers on warm cream with a little greenery: lined with a margin, dot grid, squared, and a framed plain page.",
+  "version": "1",
+  "licence": "cc0",
+  "category": "paper",
+  "tags": [
+    "lined",
+    "dot grid",
+    "graph",
+    "botanical"
+  ],
+  "file": "botanical-papers.pdf",
+  "preview": "preview.png",
+  "pages": 4
+}

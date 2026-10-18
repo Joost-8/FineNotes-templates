@@ -1,0 +1,20 @@
+{
+  "id": "biology-study-kit",
+  "name": "Biology study kit",
+  "author": "FineNotes",
+  "description": "Seven linked pages for biology: Cornell lecture notes, a diagram page with numbered labels, a lab report with graph and table, a species profile with a ruler and classification ladder, Punnett squares and a pedigree, and revision cards. Tabs on every page and the contents page take you to each one.",
+  "version": "1",
+  "licence": "cc0",
+  "category": "study",
+  "tags": [
+    "biology",
+    "science",
+    "hyperlinked",
+    "cornell",
+    "lab report",
+    "genetics"
+  ],
+  "file": "biology-study-kit.pdf",
+  "preview": "preview.png",
+  "pages": 7
+}
