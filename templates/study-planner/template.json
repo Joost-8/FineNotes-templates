@@ -1,0 +1,19 @@
+{
+  "id": "study-planner",
+  "name": "Sage study planner",
+  "author": "FineNotes",
+  "description": "An undated week with three priorities, an exam countdown with a revision timetable, and a monthly habit and study-hours tracker. Linked by the tabs at the top.",
+  "version": "1",
+  "licence": "cc0",
+  "category": "planner",
+  "tags": [
+    "study",
+    "weekly",
+    "exams",
+    "habit tracker",
+    "hyperlinked"
+  ],
+  "file": "study-planner.pdf",
+  "preview": "preview.png",
+  "pages": 3
+}
