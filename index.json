@@ -19,7 +19,9 @@
       "previews": [
         "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/cornell-notes/previews/page-1.png"
       ],
-      "download": "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/cornell-notes/cornell-notes.pdf"
+      "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/cornell-notes-v1.pdf",
+      "downloads": 0,
+      "added": "2026-10-17T23:56:40+02:00"
     },
     {
       "id": "test-page-2",
@@ -35,7 +37,9 @@
       "previews": [
         "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/test-page-2/previews/page-1.png"
       ],
-      "download": "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/test-page-2/test-page-2.pdf"
+      "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/test-page-2-v1.pdf",
+      "downloads": 0,
+      "added": "2026-10-18T00:06:19Z"
     },
     {
       "id": "weekly-planner",
@@ -62,7 +66,9 @@
         "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/weekly-planner/previews/page-7.png",
         "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/weekly-planner/previews/page-8.png"
       ],
-      "download": "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/weekly-planner/weekly-planner.pdf"
+      "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/weekly-planner-v1.pdf",
+      "downloads": 0,
+      "added": "2026-10-17T23:56:40+02:00"
     }
   ]
 }
