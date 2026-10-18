@@ -1,0 +1,13 @@
+{
+  "id": "test-page-2",
+  "name": "Test page 2",
+  "author": "Joost",
+  "description": "Test",
+  "version": "1",
+  "licence": "cc0",
+  "category": "planner",
+  "tags": [],
+  "file": "test-page-2.pdf",
+  "preview": "preview.png",
+  "pages": 1
+}
