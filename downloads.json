@@ -5,7 +5,7 @@
   },
   "botanical-papers": {
     "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/botanical-papers-v1.pdf",
-    "downloads": 0
+    "downloads": 1
   },
   "chemistry-lab-notebook": {
     "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/chemistry-lab-notebook-v1.pdf",
@@ -13,7 +13,7 @@
   },
   "cornell-notes": {
     "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/cornell-notes-v1.pdf",
-    "downloads": 1
+    "downloads": 2
   },
   "history-study-notes": {
     "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/history-study-notes-v1.pdf",
@@ -29,7 +29,7 @@
   },
   "mono-work-kit": {
     "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/mono-work-kit-v1.pdf",
-    "downloads": 0
+    "downloads": 1
   },
   "music-practice-book": {
     "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/music-practice-book-v1.pdf",
@@ -37,14 +37,14 @@
   },
   "study-planner": {
     "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/study-planner-v1.pdf",
-    "downloads": 0
+    "downloads": 1
   },
   "sunrise-daily-journal": {
     "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/sunrise-daily-journal-v1.pdf",
-    "downloads": 0
+    "downloads": 1
   },
   "weekly-planner": {
     "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/weekly-planner-v1.pdf",
-    "downloads": 0
+    "downloads": 1
   }
 }
