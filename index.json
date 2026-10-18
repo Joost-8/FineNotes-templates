@@ -301,24 +301,6 @@
       "added": "2026-10-18T03:07:06+02:00"
     },
     {
-      "id": "test-page-2",
-      "name": "Test page 2",
-      "author": "Joost",
-      "description": "Test",
-      "version": "1",
-      "licence": "cc0",
-      "category": "planner",
-      "tags": [],
-      "pages": 1,
-      "preview": "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/test-page-2/preview.png",
-      "previews": [
-        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/test-page-2/previews/page-1.png"
-      ],
-      "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/test-page-2-v1.pdf",
-      "downloads": 0,
-      "added": "2026-10-18T00:06:19Z"
-    },
-    {
       "id": "weekly-planner",
       "name": "Weekly planner",
       "author": "FineNotes",
