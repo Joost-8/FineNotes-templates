@@ -20,14 +20,18 @@ jobs:
       # types by their contents, sizes). Nothing is built.
       - if: github.event_name == 'pull_request'
         run: node scripts/build-index.mjs --check
-      # On main: build index.json and commit it when it changed.
+      # On main: a picture of every page of each template, then index.json;
+      # both committed when they changed.
+      - if: github.event_name == 'push'
+        run: sudo apt-get install -y --no-install-recommends poppler-utils
       - if: github.event_name == 'push'
         run: |
+          node scripts/make-previews.mjs
           node scripts/build-index.mjs
-          if ! git diff --quiet index.json; then
+          git add index.json templates
+          if ! git diff --cached --quiet; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add index.json
-            git commit -m "Rebuild index.json"
+            git commit -m "Rebuild page previews and index.json"
             git push
           fi

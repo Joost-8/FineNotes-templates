@@ -35,6 +35,15 @@ for (const id of readdirSync(dir).sort()) {
   const fail = (message) => errors.push(`${id}: ${message}`);
   if (!ID.test(id)) fail("the folder name must be lower case words joined by dashes");
   for (const name of readdirSync(folder)) {
+    // Page previews, made on main by scripts/make-previews.mjs: PNGs only.
+    if (name === "previews" && statSync(path.join(folder, name)).isDirectory()) {
+      for (const p of readdirSync(path.join(folder, name))) {
+        if (!/^page-\d+\.png$/.test(p) || kindOf(path.join(folder, name, p)) !== "png") {
+          fail(`previews/${p} is not a page preview`);
+        }
+      }
+      continue;
+    }
     if (!ALLOWED.includes(path.extname(name).toLowerCase())) {
       fail(`${name} is not allowed (only template.json, PDF, PNG and JPEG files)`);
     }
@@ -77,6 +86,15 @@ for (const id of readdirSync(dir).sort()) {
   };
   const download = t.file !== undefined ? check("file", ["pdf", "png", "jpeg"]) : "";
   const preview = check("preview", ["png", "jpeg"]);
+  const pageDir = path.join(folder, "previews");
+  const previews = [];
+  try {
+    const names = readdirSync(pageDir).filter((p) => /^page-\d+\.png$/.test(p));
+    names.sort((a, b) => Number(/\d+/.exec(a)[0]) - Number(/\d+/.exec(b)[0]));
+    for (const p of names) previews.push(`${RAW}/templates/${id}/previews/${p}`);
+  } catch {
+    // No page previews yet: the gallery shows the first page alone.
+  }
   entries.push({
     id,
     name: t.name,
@@ -88,6 +106,7 @@ for (const id of readdirSync(dir).sort()) {
     tags: t.tags ?? [],
     pages: Number.isInteger(t.pages) && t.pages > 0 ? t.pages : 1,
     preview,
+    ...(previews.length > 0 ? { previews } : {}),
     ...(download ? { download } : {}),
     ...(t.shop ? { shop: t.shop } : {}),
     ...(t.retired === true ? { retired: true } : {}),
