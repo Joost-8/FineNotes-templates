@@ -2,6 +2,89 @@
   "format": 1,
   "templates": [
     {
+      "id": "biology-study-kit",
+      "name": "Biology study kit",
+      "author": "FineNotes",
+      "description": "Seven linked pages for biology: Cornell lecture notes, a diagram page with numbered labels, a lab report with graph and table, a species profile with a ruler and classification ladder, Punnett squares and a pedigree, and revision cards. Tabs on every page and the contents page take you to each one.",
+      "version": "1",
+      "licence": "cc0",
+      "category": "study",
+      "tags": [
+        "biology",
+        "science",
+        "hyperlinked",
+        "cornell",
+        "lab report",
+        "genetics"
+      ],
+      "pages": 7,
+      "preview": "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/biology-study-kit/preview.png",
+      "previews": [
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/biology-study-kit/previews/page-1.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/biology-study-kit/previews/page-2.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/biology-study-kit/previews/page-3.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/biology-study-kit/previews/page-4.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/biology-study-kit/previews/page-5.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/biology-study-kit/previews/page-6.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/biology-study-kit/previews/page-7.png"
+      ],
+      "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/biology-study-kit-v1.pdf",
+      "downloads": 0,
+      "added": "2026-10-18T03:07:06+02:00"
+    },
+    {
+      "id": "botanical-papers",
+      "name": "Botanical papers",
+      "author": "FineNotes",
+      "description": "Four everyday papers on warm cream with a little greenery: lined with a margin, dot grid, squared, and a framed plain page.",
+      "version": "1",
+      "licence": "cc0",
+      "category": "paper",
+      "tags": [
+        "lined",
+        "dot grid",
+        "graph",
+        "botanical"
+      ],
+      "pages": 4,
+      "preview": "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/botanical-papers/preview.png",
+      "previews": [
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/botanical-papers/previews/page-1.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/botanical-papers/previews/page-2.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/botanical-papers/previews/page-3.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/botanical-papers/previews/page-4.png"
+      ],
+      "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/botanical-papers-v1.pdf",
+      "downloads": 0,
+      "added": "2026-10-18T03:07:06+02:00"
+    },
+    {
+      "id": "chemistry-lab-notebook",
+      "name": "Chemistry lab notebook",
+      "author": "FineNotes",
+      "description": "Lecture notes with an equations column and key reactions, a lab page with hazard symbols, a reagents table, procedure and a data grid, and hexagon paper for drawing organic structures.",
+      "version": "1",
+      "licence": "cc0",
+      "category": "study",
+      "tags": [
+        "chemistry",
+        "science",
+        "lab report",
+        "organic",
+        "hyperlinked"
+      ],
+      "pages": 3,
+      "preview": "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/chemistry-lab-notebook/preview.png",
+      "previews": [
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/chemistry-lab-notebook/previews/page-1.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/chemistry-lab-notebook/previews/page-2.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/chemistry-lab-notebook/previews/page-3.png"
+      ],
+      "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/chemistry-lab-notebook-v1.pdf",
+      "downloads": 0,
+      "added": "2026-10-18T03:07:06+02:00"
+    },
+    {
       "id": "cornell-notes",
       "name": "Cornell notes",
       "author": "FineNotes",
@@ -20,8 +103,202 @@
         "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/cornell-notes/previews/page-1.png"
       ],
       "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/cornell-notes-v1.pdf",
-      "downloads": 0,
+      "downloads": 1,
       "added": "2026-10-17T23:56:40+02:00"
+    },
+    {
+      "id": "history-study-notes",
+      "name": "History study notes",
+      "author": "FineNotes",
+      "description": "An archive-styled set: a ten-event timeline, a source analysis page (origin, purpose, value, limitations), an essay planner with point, evidence and explanation, and a key figure profile.",
+      "version": "1",
+      "licence": "cc0",
+      "category": "study",
+      "tags": [
+        "history",
+        "timeline",
+        "sources",
+        "essay",
+        "humanities",
+        "hyperlinked"
+      ],
+      "pages": 4,
+      "preview": "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/history-study-notes/preview.png",
+      "previews": [
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/history-study-notes/previews/page-1.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/history-study-notes/previews/page-2.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/history-study-notes/previews/page-3.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/history-study-notes/previews/page-4.png"
+      ],
+      "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/history-study-notes-v1.pdf",
+      "downloads": 0,
+      "added": "2026-10-18T03:07:06+02:00"
+    },
+    {
+      "id": "language-learning-journal",
+      "name": "Language learning journal",
+      "author": "FineNotes",
+      "description": "An airmail-themed journal for any language: a vocabulary table with gender dots, grammar notes with examples and exceptions, four conjugation tables, and writing practice with a corrections column.",
+      "version": "1",
+      "licence": "cc0",
+      "category": "study",
+      "tags": [
+        "language",
+        "vocabulary",
+        "grammar",
+        "conjugation",
+        "travel",
+        "hyperlinked"
+      ],
+      "pages": 4,
+      "preview": "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/language-learning-journal/preview.png",
+      "previews": [
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/language-learning-journal/previews/page-1.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/language-learning-journal/previews/page-2.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/language-learning-journal/previews/page-3.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/language-learning-journal/previews/page-4.png"
+      ],
+      "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/language-learning-journal-v1.pdf",
+      "downloads": 0,
+      "added": "2026-10-18T03:07:06+02:00"
+    },
+    {
+      "id": "maths-problem-sets",
+      "name": "Maths problem sets",
+      "author": "FineNotes",
+      "description": "Four numbered problems on dot grid with answer boxes, a graphing page with axes and a table of values, a two-column proof, and a formula sheet of eight cards.",
+      "version": "1",
+      "licence": "cc0",
+      "category": "study",
+      "tags": [
+        "maths",
+        "problem set",
+        "graph",
+        "proof",
+        "formulas",
+        "hyperlinked"
+      ],
+      "pages": 4,
+      "preview": "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/maths-problem-sets/preview.png",
+      "previews": [
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/maths-problem-sets/previews/page-1.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/maths-problem-sets/previews/page-2.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/maths-problem-sets/previews/page-3.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/maths-problem-sets/previews/page-4.png"
+      ],
+      "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/maths-problem-sets-v1.pdf",
+      "downloads": 0,
+      "added": "2026-10-18T03:07:06+02:00"
+    },
+    {
+      "id": "mono-work-kit",
+      "name": "Mono work kit",
+      "author": "FineNotes",
+      "description": "Minimal black and white with one blue accent: meeting notes with agenda and action items, a twelve-week project plan, a three-column task board, and dot grid notes.",
+      "version": "1",
+      "licence": "cc0",
+      "category": "work",
+      "tags": [
+        "work",
+        "meeting notes",
+        "project plan",
+        "kanban",
+        "minimal",
+        "hyperlinked"
+      ],
+      "pages": 4,
+      "preview": "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/mono-work-kit/preview.png",
+      "previews": [
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/mono-work-kit/previews/page-1.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/mono-work-kit/previews/page-2.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/mono-work-kit/previews/page-3.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/mono-work-kit/previews/page-4.png"
+      ],
+      "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/mono-work-kit-v1.pdf",
+      "downloads": 0,
+      "added": "2026-10-18T03:07:06+02:00"
+    },
+    {
+      "id": "music-practice-book",
+      "name": "Music practice book",
+      "author": "FineNotes",
+      "description": "Staff paper, a lead sheet with chord lines and bars, guitar chord boxes and tab, and a weekly practice log with goals and a tempo ladder.",
+      "version": "1",
+      "licence": "cc0",
+      "category": "study",
+      "tags": [
+        "music",
+        "staff paper",
+        "guitar",
+        "tab",
+        "practice log",
+        "hyperlinked"
+      ],
+      "pages": 4,
+      "preview": "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/music-practice-book/preview.png",
+      "previews": [
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/music-practice-book/previews/page-1.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/music-practice-book/previews/page-2.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/music-practice-book/previews/page-3.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/music-practice-book/previews/page-4.png"
+      ],
+      "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/music-practice-book-v1.pdf",
+      "downloads": 0,
+      "added": "2026-10-18T03:07:06+02:00"
+    },
+    {
+      "id": "study-planner",
+      "name": "Sage study planner",
+      "author": "FineNotes",
+      "description": "An undated week with three priorities, an exam countdown with a revision timetable, and a monthly habit and study-hours tracker. Linked by the tabs at the top.",
+      "version": "1",
+      "licence": "cc0",
+      "category": "planner",
+      "tags": [
+        "study",
+        "weekly",
+        "exams",
+        "habit tracker",
+        "hyperlinked"
+      ],
+      "pages": 3,
+      "preview": "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/study-planner/preview.png",
+      "previews": [
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/study-planner/previews/page-1.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/study-planner/previews/page-2.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/study-planner/previews/page-3.png"
+      ],
+      "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/study-planner-v1.pdf",
+      "downloads": 0,
+      "added": "2026-10-18T03:07:06+02:00"
+    },
+    {
+      "id": "sunrise-daily-journal",
+      "name": "Sunrise daily journal",
+      "author": "FineNotes",
+      "description": "A soft pastel journal: a daily page with mood, water, schedule, to-dos and gratitude, a weekly reflection, a year in pixels, and a lined journal page with a prompt.",
+      "version": "1",
+      "licence": "cc0",
+      "category": "journal",
+      "tags": [
+        "journal",
+        "daily",
+        "mood",
+        "gratitude",
+        "year in pixels",
+        "hyperlinked"
+      ],
+      "pages": 4,
+      "preview": "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/sunrise-daily-journal/preview.png",
+      "previews": [
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/sunrise-daily-journal/previews/page-1.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/sunrise-daily-journal/previews/page-2.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/sunrise-daily-journal/previews/page-3.png",
+        "https://raw.githubusercontent.com/Joost-8/FineNotes-templates/main/templates/sunrise-daily-journal/previews/page-4.png"
+      ],
+      "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/sunrise-daily-journal-v1.pdf",
+      "downloads": 0,
+      "added": "2026-10-18T03:07:06+02:00"
     },
     {
       "id": "test-page-2",
