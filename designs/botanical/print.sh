@@ -5,15 +5,16 @@ set -euo pipefail
 cd "$(dirname "$0")"
 EDGE="/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
 WIN=$(cygpath -w "$PWD")
-mkdir -p out/png
-for html in out/*.html; do
+D=${1:-out}
+mkdir -p $D/png
+for html in $D/*.html; do
   name=$(basename "$html" .html)
-  rm -f "out/$name.pdf"
+  rm -f "$D/$name.pdf"
   prof="$TEMP/edge-tpl-$name-$RANDOM"
   "$EDGE" --headless=new --disable-gpu --no-first-run --user-data-dir="$prof" \
     --virtual-time-budget=15000 --no-pdf-header-footer \
-    --print-to-pdf="$WIN\\out\\$name.pdf" "file:///$WIN/out/$name.html" >/dev/null 2>&1 || true
-  for i in $(seq 1 40); do [ -s "out/$name.pdf" ] && break; sleep 0.5; done
-  ls -la "out/$name.pdf"
+    --print-to-pdf="$WIN\\$D\\$name.pdf" "file:///$WIN/$D/$name.html" >/dev/null 2>&1 || true
+  for i in $(seq 1 40); do [ -s "$D/$name.pdf" ] && break; sleep 0.5; done
+  ls -la "$D/$name.pdf"
 done
-python -I render.py out
+python -I render.py $D

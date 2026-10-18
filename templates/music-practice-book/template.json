@@ -1,0 +1,20 @@
+{
+  "id": "music-practice-book",
+  "name": "Music practice book",
+  "author": "FineNotes",
+  "description": "Staff paper, a lead sheet with chord lines and bars, guitar chord boxes and tab, and a weekly practice log with goals and a tempo ladder.",
+  "version": "1",
+  "licence": "cc0",
+  "category": "study",
+  "tags": [
+    "music",
+    "staff paper",
+    "guitar",
+    "tab",
+    "practice log",
+    "hyperlinked"
+  ],
+  "file": "music-practice-book.pdf",
+  "preview": "preview.png",
+  "pages": 4
+}

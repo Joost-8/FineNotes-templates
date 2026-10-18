@@ -1,0 +1,20 @@
+{
+  "id": "mono-work-kit",
+  "name": "Mono work kit",
+  "author": "FineNotes",
+  "description": "Minimal black and white with one blue accent: meeting notes with agenda and action items, a twelve-week project plan, a three-column task board, and dot grid notes.",
+  "version": "1",
+  "licence": "cc0",
+  "category": "work",
+  "tags": [
+    "work",
+    "meeting notes",
+    "project plan",
+    "kanban",
+    "minimal",
+    "hyperlinked"
+  ],
+  "file": "mono-work-kit.pdf",
+  "preview": "preview.png",
+  "pages": 4
+}

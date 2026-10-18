@@ -1,0 +1,20 @@
+{
+  "id": "sunrise-daily-journal",
+  "name": "Sunrise daily journal",
+  "author": "FineNotes",
+  "description": "A soft pastel journal: a daily page with mood, water, schedule, to-dos and gratitude, a weekly reflection, a year in pixels, and a lined journal page with a prompt.",
+  "version": "1",
+  "licence": "cc0",
+  "category": "journal",
+  "tags": [
+    "journal",
+    "daily",
+    "mood",
+    "gratitude",
+    "year in pixels",
+    "hyperlinked"
+  ],
+  "file": "sunrise-daily-journal.pdf",
+  "preview": "preview.png",
+  "pages": 4
+}

@@ -1,0 +1,20 @@
+{
+  "id": "history-study-notes",
+  "name": "History study notes",
+  "author": "FineNotes",
+  "description": "An archive-styled set: a ten-event timeline, a source analysis page (origin, purpose, value, limitations), an essay planner with point, evidence and explanation, and a key figure profile.",
+  "version": "1",
+  "licence": "cc0",
+  "category": "study",
+  "tags": [
+    "history",
+    "timeline",
+    "sources",
+    "essay",
+    "humanities",
+    "hyperlinked"
+  ],
+  "file": "history-study-notes.pdf",
+  "preview": "preview.png",
+  "pages": 4
+}

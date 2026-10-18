@@ -1,0 +1,19 @@
+{
+  "id": "chemistry-lab-notebook",
+  "name": "Chemistry lab notebook",
+  "author": "FineNotes",
+  "description": "Lecture notes with an equations column and key reactions, a lab page with hazard symbols, a reagents table, procedure and a data grid, and hexagon paper for drawing organic structures.",
+  "version": "1",
+  "licence": "cc0",
+  "category": "study",
+  "tags": [
+    "chemistry",
+    "science",
+    "lab report",
+    "organic",
+    "hyperlinked"
+  ],
+  "file": "chemistry-lab-notebook.pdf",
+  "preview": "preview.png",
+  "pages": 3
+}
