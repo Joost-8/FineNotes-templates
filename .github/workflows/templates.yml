@@ -34,7 +34,7 @@ jobs:
       # counted download copies and their counts, then index.json; committed
       # when anything changed.
       - if: github.event_name != 'pull_request'
-        run: sudo apt-get install -y --no-install-recommends poppler-utils
+        run: sudo apt-get update -q && sudo apt-get install -y --no-install-recommends poppler-utils
       - if: github.event_name != 'pull_request'
         env:
           GH_TOKEN: ${{ github.token }}
