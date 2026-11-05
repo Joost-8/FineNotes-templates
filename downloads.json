@@ -13,7 +13,7 @@
   },
   "cornell-notes": {
     "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/cornell-notes-v1.pdf",
-    "downloads": 3
+    "downloads": 4
   },
   "history-study-notes": {
     "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/history-study-notes-v1.pdf",
@@ -45,6 +45,6 @@
   },
   "weekly-planner": {
     "download": "https://github.com/Joost-8/FineNotes-templates/releases/download/gallery-files/weekly-planner-v1.pdf",
-    "downloads": 4
+    "downloads": 5
   }
 }
